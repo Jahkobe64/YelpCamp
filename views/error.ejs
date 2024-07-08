@@ -4,7 +4,9 @@
     <div class="col-6 offset-3">
         <div class="alert alert-danger" role="alert">
             <h4 class="alert-heading" style="word-break: break-word;"><%= err.message %></h4>
-            <pre style="white-space: pre-wrap; word-break: break-word;"><%= err.stack %></pre>
+            <% if (process.env.NODE_ENV !== "production") { %>
+                <pre style="white-space: pre-wrap; word-break: break-word;"><%= err.stack %></pre>
+            <% } %>
           </div>
     </div>
 </div>

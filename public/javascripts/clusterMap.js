@@ -38,7 +38,7 @@ mapboxgl.accessToken = mapToken;
                     'step',
                     ['get', 'point_count'],
                     '#03A9F4',
-                    10,
+                    20,
                     '#2196F3',
                     30,
                     '#3F51B5'
@@ -50,7 +50,7 @@ mapboxgl.accessToken = mapToken;
                     10,
                     20,
                     30,
-                    25
+                    30
                 ]
             }
         });
@@ -74,7 +74,7 @@ mapboxgl.accessToken = mapToken;
             filter: ['!', ['has', 'point_count']],
             paint: {
                 'circle-color': '#11b4da',
-                'circle-radius': 4,
+                'circle-radius': 9,
                 'circle-stroke-width': 1,
                 'circle-stroke-color': '#fff'
             }
